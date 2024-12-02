@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 10%;
+            border-collapse: collapse; 
+            /* to collapse table's border */
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+       tr:nth-child(even){
+        background-color: #8d3939;
+       } 
+    </style>
+</head>
+<body>
+    <colgroup>
+        <col span="2" style="background-color: blue;"/>
+    </colgroup>
+    <!-- table>tr>th*3    -->
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Country CODE</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>india@google.com</td>
+        </tr>
+        <tr>
+            <td>USA</td>
+            <td>USA</td>
+            <td>US@google.com</td>
+        </tr>
+        <tr >
+            <td colspan="3">Japan</td>
+            <td>JP</td>
+            <td>jp@google</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>Aus</td>
+            <td>aus@gmail.com</td>
+        </tr>
+        <!-- rowspan and colspan and tfoot-->
+    </table>   
+</body>
+</html>
